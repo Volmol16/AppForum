@@ -1,10 +1,25 @@
 import React from 'react'
-import Header from './components/Header/Header'
+import { Routes, Route, Link } from 'react-router-dom';
+import Homepage from './pages/Homepage';
+import Articles from './pages/Articles';
+import Notfoundpage from './pages/Notfoundpage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
+import { Layout } from './components/Layout';
+
 
 const App = () => {
   return (
-    <div className='bg-black/90 h-screen'>
-      <Header />
+    <div>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+        <Route index element={<Homepage />} />
+        <Route path='articles' element={<Articles />} />
+        <Route path='login' element={<LoginPage />} />
+        <Route path='register' element={<RegisterPage />} />
+        <Route path='*' element={<Notfoundpage />} />
+        </Route>
+      </Routes>
     </div>
   )
 }
