@@ -10,7 +10,7 @@ import { Layout } from './components/Layout';
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-[#0d1117] h-screen'>
       <Routes>
         <Route path='/' element={<Layout />}>
         <Route index element={<Homepage />} />

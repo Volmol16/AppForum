@@ -18,16 +18,19 @@ const navLink = [
 
 const HeaderPage = () => {
   return (
-    <div className='flex space-x-5 justify-center'>
+    <div className='bg-[#010409]'>
+        <div className='flex space-x-5 justify-center py-2'>
       {
         navLink.map((data, index) => (
           <header key={index}>
-            <Link to={data.link}>{data.name}</Link>
+            <Link className='text-white' to={data.link}>{data.name}</Link>
           </header>
           )
         )
       }
       </div>
+    </div>
+    
   )
 }
 

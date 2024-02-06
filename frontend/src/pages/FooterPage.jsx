@@ -2,7 +2,7 @@ import React from 'react'
 
 const FooterPage = () => {
   return (
-    <h1 className='flex justify-center py-10'>2024</h1>
+    <h1 className='flex justify-center py-10 text-white font-normal'>2024</h1>
   )
 }
 
