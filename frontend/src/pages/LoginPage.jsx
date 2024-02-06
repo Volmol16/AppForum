@@ -4,17 +4,17 @@ import { Link } from 'react-router-dom'
 const LoginPage = () => {
   return (
     <div className='flex justify-center py-10'>
-        <div className='py-16 px-3 bg-gray-500 rounded-lg max-w-xs'>
-            <h1 className=' text-center'>Login</h1>
-            <div className='space-y-5'>
-                <input type="mail" placeholder='Введите почту' /> <br />
-                <input type="password" placeholder='Введите пароль' />
+        <div className='py-16 px-3 bg-[#161b21] rounded-lg max-w-xs'>
+            <h1 className=' text-center font-bold text-2xl text-sky-500'>Login</h1>
+            <div className='space-y-5 pt-5'>
+                <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="mail" placeholder='Введите почту' /> <br />
+                <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="password" placeholder='Введите пароль' />
             </div>
             <div className='space-x-2 pt-10 flex justify-center'>
-            <button className='px-7 py-3 bg-gray-600 text-white rounded-lg'>Войти</button>
+            <button className='px-10 py-3 bg-[#232a32] text-white text-xl font-bold rounded-lg duration-150 hover:bg-[#1b2127]'>Войти</button>
             </div>
             <div className='pt-10 flex justify-center'>
-            <Link className='' to='/register'>Нет аккаунт?</Link>
+            <Link className='text-lg font-bold text-white duration-150 hover:text-sky-500' to='/register'>Нет аккаунт?</Link>
             </div>
         </div>
     </div>

@@ -23,7 +23,7 @@ const HeaderPage = () => {
       {
         navLink.map((data, index) => (
           <header key={index}>
-            <Link className='text-white' to={data.link}>{data.name}</Link>
+            <Link className='text-white font-xl font-medium' to={data.link}>{data.name}</Link>
           </header>
           )
         )
