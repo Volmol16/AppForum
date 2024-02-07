@@ -7,7 +7,7 @@ const RegisterPage = () => {
         <div className='py-16 px-3 bg-[#161b21] rounded-lg max-w-xs'>
             <h1 className=' text-center font-bold text-2xl text-sky-500'>Register</h1>
             <div className='space-y-5 pt-5'>
-                <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="mail" placeholder='Введите ник' />
+                <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="text" placeholder='Введите ник' />
                 <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="mail" placeholder='Введите почту' />
                 <input className='text-center text-white font-medium rounded-lg bg-[#232a32] py-2' type="password" placeholder='Введите пароль' />
             </div>
